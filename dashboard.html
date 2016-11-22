@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Manager</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/docuDex/assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Document Manager</a>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li><a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="upload.html" class="btn btn-primary btn-sm top-upload-btn"><i class="fa fa-fw fa-plus"></i> Upload Document</a></li>
+        </ul>
+    </div>
+</nav>
+<br/><br/><br/><br/><br/>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-widget bordered">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup" data-value="7800">7800</span>
+                            <small class="font-green-sharp">$</small>
+                        </h3>
+                        <small>TOTAL PROFIT</small>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title"> progress </div>
+                        <div class="status-number"> 76% </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--widget -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-widget bordered">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup" data-value="7800">100</span>
+
+                        </h3>
+                        <small>Open Support ticket</small>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title"> progress </div>
+                        <div class="status-number"> 76% </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end widget -->
+
+        <!--widget -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-widget bordered">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup" data-value="7800">80</span>
+
+                        </h3>
+                        <small>Approved Case</small>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title"> progress </div>
+                        <div class="status-number"> 76% </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end widget -->
+
+        <!--widget -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-widget bordered">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup" data-value="7800">80</span>
+
+                        </h3>
+                        <small>Pending Case</small>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title"> progress </div>
+                        <div class="status-number"> 76% </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end widget -->
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title tabbable-line">
+                    <div class="caption">
+                        <i class=" icon-social-twitter font-dark hide"></i>
+                        <span class="caption-subject font-dark bold uppercase">Quick Actions</span>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab_actions_pending" data-toggle="tab" aria-expanded="true"> Pending </a>
+                        </li>
+                        <li class="">
+                            <a href="#tab_actions_completed" data-toggle="tab" aria-expanded="false"> Completed </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="portlet-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_actions_pending">
+                            <!-- BEGIN: Actions -->
+                            <div class="mt-actions">
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-magnet"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Natasha Kim</span>
+                                                    <p class="mt-action-desc">Dummy text of the printing</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-green"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class=" icon-bubbles"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Gavin Bond</span>
+                                                    <p class="mt-action-desc">pending for approval</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-red"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-call-in"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Diana Berri</span>
+                                                    <p class="mt-action-desc">Lorem Ipsum is simply dummy text</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-green"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class=" icon-bell"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">John Clark</span>
+                                                    <p class="mt-action-desc">Text of the printing and typesetting industry</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-red"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-magnet"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Donna Clarkson </span>
+                                                    <p class="mt-action-desc">Simply dummy text of the printing</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-green"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-magnet"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Tom Larson</span>
+                                                    <p class="mt-action-desc">Lorem Ipsum is simply dummy text</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-green"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Actions -->
+                        </div>
+                        <div class="tab-pane" id="tab_actions_completed">
+                            <!-- BEGIN:Completed-->
+                            <div class="mt-actions">
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-action-redo"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Frank Cameron</span>
+                                                    <p class="mt-action-desc">Lorem Ipsum is simply dummy</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-red"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-cup"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Ella Davidson </span>
+                                                    <p class="mt-action-desc">Text of the printing and typesetting industry</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-green"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class=" icon-graduation"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Jason Dickens </span>
+                                                    <p class="mt-action-desc">Dummy text of the printing and typesetting industry</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-red"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-action">
+                                    <div class="mt-action-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png"> </div>
+                                    <div class="mt-action-body">
+                                        <div class="mt-action-row">
+                                            <div class="mt-action-info ">
+                                                <div class="mt-action-icon ">
+                                                    <i class="icon-badge"></i>
+                                                </div>
+                                                <div class="mt-action-details ">
+                                                    <span class="mt-action-author">Jan Kim</span>
+                                                    <p class="mt-action-desc">Lorem Ipsum is simply dummy</p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-action-datetime ">
+                                                <span class="mt-action-date">3 jun</span>
+                                                <span class="mt-action-dot bg-green"></span>
+                                                <span class="mt=action-time">9:30-13:00</span>
+                                            </div>
+                                            <div class="mt-action-buttons ">
+                                                <div class="btn-group btn-group-circle">
+                                                    <button type="button" class="btn btn-outline green btn-sm">Appove</button>
+                                                    <button type="button" class="btn btn-outline red btn-sm">Reject</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END: Completed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /container -->
+</body>
+</html>

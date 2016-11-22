@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Manager</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/docuDex/assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Document Manager</a>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li><a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="upload.html" class="btn btn-primary btn-sm top-upload-btn"><i class="fa fa-fw fa-plus"></i> Upload Document</a></li>
+        </ul>
+    </div>
+</nav>
+<br/><br/><br/><br/><br/>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title tabbable-line">
+                    <div class="caption">
+                        <i class=" icon-social-twitter font-dark hide"></i>
+                        <span class="caption-subject font-dark bold uppercase">Documents</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="tab-content">
+                        <div class="col-lg-12 col-md-12 col-sm-12 no-padding">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 doc-widget">
+                                <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                                <label>Case: CA005Y10 </label>
+                                <span class="doc-status">Approved</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 doc-widget">
+                                <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                                <label>Case: CA005Y10 </label>
+                                <span class="doc-status">Approved</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 doc-widget">
+                                <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                                <label>Case: CA095Y10</label>
+                                <span class="doc-status">Approved</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 doc-widget rejected">
+                                <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                                <label>Case: CA005Y10</label>
+                                <span class="doc-status">Rejected</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 doc-widget">
+                                <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                                <label>Case: CA005Y10</label>
+                                <span class="doc-status">Approved</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 doc-widget">
+                                <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                                <label>Case: CA005Y10</label>
+                                <span class="doc-status">Approved</span>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /container -->
+
+<script type="text/javascript">
+    $('.doc-widget').on('click', function() {
+        location.href="docDetails.html";
+    });
+</script>
+</body>
+</html>
